@@ -4,6 +4,9 @@ using System.Diagnostics;
 
 namespace Session01_Demo.Controllers
 {
+
+    // Mvc Controller : Controller : ControllerBase
+    // API Controller : ControllerBase
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -12,8 +15,8 @@ namespace Session01_Demo.Controllers
         {
             _logger = logger;
         }
-
-        public IActionResult Index()
+        // Default Method for Actions ---> GET
+        public IActionResult Index() // master action 
         {
             return View();
         }
